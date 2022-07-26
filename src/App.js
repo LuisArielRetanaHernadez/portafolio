@@ -1,23 +1,53 @@
-import logo from './logo.svg';
-import './App.css';
+// react hooks
+import { useRef, useEffect } from 'react';
 
+// react-router-dom
+import { Route, Routes } from 'react-router-dom';
+
+// views
+import Home from './views/Home/Home.view'
+
+// Layout
+import Menu from './layout/Menu/Menu.layout';
+import Header from './component/Header/Header';
+
+import './App.css';
+// mousemove
 function App() {
+  const outer = useRef();
+  const inner = useRef();
+
+  
+
+  const effectCursor = (e) => {
+    document.addEventListener("mousemove", e => {
+      if (!outer.current || !inner.current) return
+      inner.current.style.top = e.clientY + "px"
+      inner.current.style.left = e.clientX + "px"
+  
+      outer.current.style.top = e.clientY + "px"
+      outer.current.style.left = e.clientX + "px"
+    })
+  }
+  // document.addEventListener("mousemove", e => {
+  //   if (!outer.current || !inner.current) return
+  //   inner.current.style.top = e.clientY + "px"
+  //   inner.current.style.left = e.clientX + "px"
+
+  //   outer.current.style.top = e.clientY + "px"
+  //   outer.current.style.left = e.clientX + "px"
+  // })
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" onMouseMove={effectCursor}>
+      <span className="cursor-outer" ref={outer}></span>
+      <span className="cursor-inner" ref={inner}></span>
+      <Routes>
+        <Route path="/" element={<Menu />}>
+          <Route path="/" index element={<Home />}/>
+        </Route>
+        <Route path="/uno" element={ <Header /> } />
+      </Routes>
     </div>
   );
 }

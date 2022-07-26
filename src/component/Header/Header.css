@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&family=League+Spartan:wght@300&family=Noto+Sans&family=Poppins:wght@100&family=Roboto+Mono&family=Roboto:wght@700&family=Rubik:wght@300&display=swap');
+
+.container-header-home {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: black;
+    background-attachment: fixed;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container-header-home__text-centrer {
+    text-align: center;
+    padding: 0.50rem;
+    border-radius: 10px;   
+    /* -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.5);  */
+
+}
+.container-header-home__machine_write {
+    display: flex;
+    justify-content: center;
+}
+.container-header-home__machine_write p {
+    margin-left: 10px;
+}
+.container-header-home__text-centrer h1 {
+    margin: 0px;
+    font-size: 3em;
+    letter-spacing: 5px;
+    -webkit-text-stroke: 1px #FFEDED;
+}
+.container-header-home__text-centrer h2 {
+    margin: 0;
+    color: white;
+    letter-spacing: 5px;
+    font-size: 2.3em;
+}
+.container-header-home__text-centrer h2::first-letter {
+    color: #100F0F;
+    font-size: 2.5em;
+}
+.container-header-home__text-centrer p {
+    color: #100F0F;
+    font-size: xx-large;
+    font-weight: 600;
+}
+.container-header-home__text-centrer p::first-letter {
+    font-size: 1.2em;
+    color: white;
+}
+.container-header-home .bubble {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #4fc3dc44,
+    0 0 50px #4fc3dc, 0 0 100px #4fc3dc;
+    background-color: #4fc3dc;
+    position: absolute;
+    left: var(--l);
+    animation: particles 15s linear infinite;
+    animation-duration: calc(120s / var(--i));
+}
+.container-header-home .bubble:nth-child(even) {
+    box-shadow: 0 0 0 10px #ff2d7544,
+    0 0 50px #4fc3dc, 0 0 100px #4fc3dc;
+    background-color: #ff2d75;
+}
+@keyframes particles {
+    0% {
+        transform: translateY(100vh) scale(0);
+    }
+    100% {
+        transform: translateY(-70vh) scale(1);
+    }
+}

@@ -1,0 +1,65 @@
+.container-Proyects {
+    width: 100%;
+    height: 90vh;
+    /* clip-path: polygon(0 0, 100% 9%, 100% 100%, 0% 100%); */
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.content-title-proyects {
+    width: 100%;
+    height: 10%;
+    color: white;
+    /* background-color: brown; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-proyects {
+    width: 100%;
+    height: 90%;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.content-proyects .proyect {
+    width: 22%;
+    height: 38%;
+    margin: 0.20rem;
+    background-image: url(https://res.cloudinary.com/dqmkovsdy/image/upload/v1658705056/portafolio/proyect_1_equvr6.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: relative;
+}
+.proyect .content-link-proyect {
+    width: 100%;
+    height: 100%;
+    border-right: 3px solid #FF0063;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 99%;
+    transition: all 2s;
+}
+.content-link-proyect {
+    color: white;
+}
+.content-link-proyect a {
+    text-decoration: none;
+    color: #FF0063;
+}
+.proyect:hover .content-link-proyect{
+    right: 1%;
+}

@@ -1,0 +1,65 @@
+.container-skills {
+    height: 60vh;
+    overflow: hidden;
+    /* clip-path: polygon(53% 9%, 100% 0, 100% 100%, 0 100%, 0 0); */
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+}
+
+.content-about-education {
+    width: 100%;
+    /* background-color: cadetblue; */
+}
+
+.content-skills {
+    width: 100%;
+    height: 25%;
+    /* background-color: darkcyan; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.scrolling-skills {
+    width: 70%;
+    height: 100%;
+    border: 2px solid #4fc3dc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;    overflow: hidden;
+    display: flex;
+}
+
+.content-icon-skill {
+    width: 25%;
+    height: 100%;
+    margin-left: 0.25rem;
+    /* background-color: violet; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content-icon-skill img {
+    width: 50%;
+    object-fit: cover;
+    /* background-color: red; */
+    transition: all 1s ;
+}
+.content-icon-skill img:hover {
+    width: 60%;
+    transition: 1s;
+}
+/* ------------- */
+.content-about-education > h3 {
+    color: #100F0F;
+    font-size: 1.9em;
+}
+.content-about-education > h3::first-letter {
+    color: #4fc3dc
+}
+.content-about-education ul li p {
+    color: #4fc3dc;
+    font-weight: 500;
+}
