@@ -1,5 +1,5 @@
 // react hooks
-import { useRef, useEffect } from 'react';
+import { useRef } from 'react';
 
 // react-router-dom
 import { Route, Routes } from 'react-router-dom';
