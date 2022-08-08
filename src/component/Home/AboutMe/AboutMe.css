@@ -13,24 +13,46 @@
     justify-content: space-around;
 }
 
-/* content-img-phot-About-Me */
+/*########### style of content-img and img ###########*/
 
 .content-img-phot-About-Me {
     width: 30%;
     height: 90%;
     object-fit: cover;
-    background-color: aqua;
+    border-radius: 5%;
     display: flex; 
     align-items: center;
     justify-content: center;
+    position: relative;
+    transition: all 1s;
+}
+.content-img-phot-About-Me::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    background-color: rgb(26, 24, 24);
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    transition: all 1s;
+}
+.content-img-phot-About-Me:hover:before {
+    right: -10px;
+    bottom: -10px;
+    background-color: gray;
 }
 .content-img-phot-About-Me img {
     width: 100%;
     height: 100%;
+    border: 2px solid white;
+    background-color: white;
+    border-radius: inherit;
     object-fit: cover;
+    position: relative;
 }
 
-/* conten-About-Me-more */
+/* ################# style of conten-About-Me-more ################# */
 .content-About-Me-more {
     width: 50%;
     height: 100%;
@@ -139,7 +161,7 @@
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    color: #FF0063;
+    color: #4fc3dc;
     font-weight: 500;
     outline: none;
     overflow: hidden;
@@ -156,7 +178,7 @@
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    color: #4fc3dc;
+    color: #FF0063;
     font-weight: 500;
     outline: none;
     overflow: hidden;
@@ -224,10 +246,12 @@
         border-radius: 50%;
     }
     100% {
+
         right: 50%;
         border-radius: 0px;
         width: 100%;
         height: 100%;
+        color: #FF0063;
     }
 }
 @keyframes circleAbout2 {
@@ -268,12 +292,40 @@
         border-radius: 50%;
     }
     100% {
+
         left: 50%;
         border-radius: 0px;
         width: 100%;
         height: 100%;
+        color: #4fc3dc;
     }
 }
 .container-buttons a:hover p {
     opacity: 0;
+}
+/* ########## media max-width: 800px ########### */
+@media (max-width: 800px) {
+    .content-About-Me-text {
+        font-size:medium;
+    }
+    .content-img-phot-About-Me {
+        width: 45%;
+    }
+    .content-img-phot-About-Me::before {
+        width: 0%;
+        height: 0%;
+    }
+}
+@media (max-width: 650px) {
+    .content-About-Me-text p{
+        font-size: small;     
+    }
+    .title-About-Me {
+        font-size: 0.85em;
+    }
+
+    .content-img-phot-About-Me {
+        border-radius: 0px;
+        display: none;
+    }
 }

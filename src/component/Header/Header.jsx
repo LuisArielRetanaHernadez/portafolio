@@ -45,14 +45,14 @@ const particles = [
 
 const Header = () => {
     return ( 
-        <header className="container-header-home">
+        <header className="container-header-home" id="Main">
             <div className="container-header-home__text-centrer">
                 <h1>Luis Ariel RH</h1>
                 <h2>Desarrolla</h2>
                 <div className="container-header-home__machine_write">
                     <p>Tu </p>
-                    <p>
-                        <Typewriter 
+                    <span className="text_machine_write">
+                        <Typewriter className=""
                             options={{
                                 strings: ["Imaginacion", "Ideas", "Plan", "Web"],
                                 cursor: '_',
@@ -62,7 +62,7 @@ const Header = () => {
                                 loop: true
                             }}
                         />            
-                    </p>
+                    </span>
                 </div>
                 {
                     particles.map((x, n) => 

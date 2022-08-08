@@ -24,13 +24,13 @@
     display: flex;
     justify-content: center;
 }
-.container-header-home__machine_write p {
-    margin-left: 10px;
-}
+
 .container-header-home__text-centrer h1 {
     margin: 0px;
     font-size: 3em;
+    color: transparent;
     letter-spacing: 5px;
+    background-clip: text;
     -webkit-text-stroke: 1px #FFEDED;
 }
 .container-header-home__text-centrer h2 {
@@ -39,16 +39,35 @@
     letter-spacing: 5px;
     font-size: 2.3em;
 }
+.container-header-home__text-centrer h2:hover ~ .inner{
+    width: 40px;
+    height: 40px;
+}
 .container-header-home__text-centrer h2::first-letter {
     color: #100F0F;
     font-size: 2.5em;
 }
-.container-header-home__text-centrer p {
+.container-header-home__machine_write p  {
+    margin-left: 10px;
+}
+.container-header-home__machine_write p {
     color: #100F0F;
     font-size: xx-large;
     font-weight: 600;
 }
-.container-header-home__text-centrer p::first-letter {
+.container-header-home__machine_write p::first-letter {
+    font-size: 1.2em;
+    color: white;
+}
+.container-header-home__machine_write .text_machine_write  {
+    margin-left: 10px;
+}
+.container-header-home__machine_write .text_machine_write {
+    color: #100F0F;
+    font-size: xx-large;
+    font-weight: 600;
+}
+.container-header-home__machine_write .text_machine_write::first-letter {
     font-size: 1.2em;
     color: white;
 }

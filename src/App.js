@@ -14,19 +14,19 @@ import Header from './component/Header/Header';
 import './App.css';
 // mousemove
 function App() {
-  const outer = useRef();
+  // const outer = useRef();
   const inner = useRef();
 
   
 
   const effectCursor = (e) => {
     document.addEventListener("mousemove", e => {
-      if (!outer.current || !inner.current) return
+      if (!inner.current) return
       inner.current.style.top = e.clientY + "px"
       inner.current.style.left = e.clientX + "px"
   
-      outer.current.style.top = e.clientY + "px"
-      outer.current.style.left = e.clientX + "px"
+      // outer.current.style.top = e.clientY + "px"
+      // outer.current.style.left = e.clientX + "px"
     })
   }
   // document.addEventListener("mousemove", e => {
@@ -40,7 +40,7 @@ function App() {
 
   return (
     <div className="App" onMouseMove={effectCursor}>
-      <span className="cursor-outer" ref={outer}></span>
+      {/* <span className="cursor-outer" ref={outer}></span> */}
       <span className="cursor-inner" ref={inner}></span>
       <Routes>
         <Route path="/" element={<Menu />}>

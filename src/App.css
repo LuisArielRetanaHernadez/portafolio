@@ -7,9 +7,12 @@
 }
 .App {
   text-align: center;
-  background-color: white;
+  background-color: black;
+  scroll-behavior: smooth;
 }
-
+body, html {
+  scroll-behavior: smooth;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -49,9 +52,10 @@
   border: 1px solid white;
 }
 .cursor-inner {
-  width: 7px;
-  height: 7px;
+  width: 15px;
+  height: 15px;
   background-color: white;
+  mix-blend-mode: difference;
 }
 
 ::-webkit-scrollbar {

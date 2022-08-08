@@ -6,10 +6,10 @@ import "./AboutMe.css"
 
 const AboutMe = () => {
     return ( 
-        <section className="container-About-Me">
+        <section className="container-About-Me" id="About">
             <div className="content-About-Me">
                 <div className="content-img-phot-About-Me">
-                    <img src="https://res.cloudinary.com/dqmkovsdy/image/upload/v1658606472/portafolio/phote_uiiuva.jpg" alt="me phot about me"/>
+                    <img src="https://res.cloudinary.com/dqmkovsdy/image/upload/v1646438658/portafoli/multimedia/img/me1_wv1o5d.png" alt="me phot about me"/>
                 </div> 
 
                 <div className="content-About-Me-more">
