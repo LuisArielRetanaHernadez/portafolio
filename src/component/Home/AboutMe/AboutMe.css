@@ -86,8 +86,8 @@
     justify-content: center;
 }
 
-.container-buttons button {
-    padding: 13px 35px;
+.container-buttons .button-cv {
+    padding: 11px 35px;
     /* border: 1px solid #ff2d75; */
     border-radius: 5px;
     color: white;
@@ -101,10 +101,10 @@
     position: relative;
 }
 
-.container-buttons button p {
+.container-buttons .button-cv p {
     position: relative;
 }
-.container-buttons button::before {
+.container-buttons .button-cv::before {
     content: '';
     width: 120%;
     height: 80%;
@@ -113,13 +113,13 @@
     position: absolute;
     animation: Dowland 2s linear infinite;
 }
-.container-buttons button span {
+.container-buttons .button-cv span {
     border-radius: 5%;
     background-color: black;
     position: absolute;
     inset: 2px;
 }
-.container-buttons button p {
+.container-buttons .button-cv p {
     position: relative;
     z-index: 10;
 }
@@ -132,7 +132,7 @@
     }
 }
 
-.container-buttons a {
+.container-buttons .button-direction-contact {
     margin-left: 10px;
     padding: 10px 20px;
     border-radius: 5px;
@@ -144,7 +144,7 @@
     position: relative;
     /* background-color: blueviolet; */
 }
-.container-buttons a {
+.container-buttons .button-direction-contact {
     outline: none;
     display: flex;
     align-items: center;
@@ -157,7 +157,7 @@
     transition: all .01s;
 }
 
-.container-buttons a .about-me-contactcircle-1 {
+.container-buttons .button-direction-contact .about-me-contactcircle-1 {
     width: 10px;
     height: 10px;
     border-radius: 50%;
@@ -174,7 +174,7 @@
     right: -50%;
     transition: all 1s ease-in-out;
 }
-.container-buttons a .about-me-contactcircle-2 {
+.container-buttons .button-direction-contact .about-me-contactcircle-2 {
     width: 10px;
     height: 10px;
     border-radius: 50%;
@@ -191,17 +191,17 @@
     left: -50%;
     transition: all 1s ease-in-out;
 }
-.container-About-Me a:hover {
+.container-About-Me .button-direction-contact:hover {
     border: 0px;
 }
-.container-buttons a:hover .about-me-contactcircle-1{
+.container-buttons .button-direction-contact:hover .about-me-contactcircle-1{
     /* right: 50%;
     border-radius: 0px;
     width: 100%;
     height: 100%; */
     animation: circleAbout1 1s linear forwards;
 }
-.container-buttons a:hover .about-me-contactcircle-2{
+.container-buttons .button-direction-contact:hover .about-me-contactcircle-2{
     /* left: 50%;
     border-radius: 0px;
     width: 100%;
@@ -300,7 +300,7 @@
         color: #4fc3dc;
     }
 }
-.container-buttons a:hover p {
+.container-buttons .button-direction-contact:hover p {
     opacity: 0;
 }
 /* ########## media max-width: 800px ########### */
@@ -327,5 +327,27 @@
     .content-img-phot-About-Me {
         border-radius: 0px;
         display: none;
+    }
+}
+/* ----------- media max-width: 450px ------------*/
+@media (max-width: 420px) {
+    /* ############ style of container-about-me ########### */
+    .container-About-Me {
+        height: 45vh;
+    }
+    /* ############ style of content-about-me-more ############# */
+    .content-About-Me-more {
+        width: 95%;
+    }
+    /* ############ style of title-about-me ############## */
+    .title-About-Me {
+        font-size: 0.75em;
+    }
+}
+/* ----------- media max-width: 380px ------------*/
+@media (max-width: 380px) {
+    /* ########### style of container-about-me ########## */
+    .container-About-Me {
+        height: 60vh;
     }
 }

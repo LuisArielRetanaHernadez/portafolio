@@ -22,7 +22,7 @@
     height: 70%;
     margin: auto;
     border-radius: 15px;
-    /* background-color: #100F0F; */
+    background-color: #100F0F;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -229,5 +229,11 @@
     .content-icon-contact ul li {
         margin-left: 3px;
         margin-right: 3px;
+    }
+    .component-Contact-form form .form-Contact-textarea {
+        font-size: small;
+    }
+    .content-Contact-form {
+        width: 90%;
     }
 }

@@ -60,16 +60,18 @@
 }
 /* button menu */
 .button-menu {
-    background-color: rosybrown;
+    /* background-color: rosybrown; */
+    border-radius: 50%;
     display: none;
 }
+
 
 /* max-width 800 */
 @media (max-width: 800px) {
     /* contenido principal del menu */
     .content-menu nav ul {
         margin-right: 0.20rem;
-        background-color:darkcyan
+        background-color: #100F0F;
     }
     /* logootipo */
     .content-menu .logotipo-menu {
@@ -84,15 +86,26 @@
 /* max-width: 650px */
 @media (max-width: 650px) {
     .button-menu {
+        width: 7%;
+        height: 50%;
         padding: 0.25rem;
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .icon-burgegle {
+        width: 90%;
+        height: 90%;
+        color: #FF008E;
     }
     .content-menu nav ul {
         width: 80%;
         height: calc(100vh - 10%);
-        display: none;
+        display: block;
         position: absolute;
         top: 100%;
+        /* right: 100%; */
+        transition: all 1s ease;
     }
     .content-menu nav ul li{
         margin: 1rem 0 0 0;
@@ -102,4 +115,12 @@
     .content-menu nav ul li a {
         background-color:black;
     }
+    
+    .hidden-menu {
+        right: 100%;
+    }
+    .show-menu {
+        right: 20%;
+    }
+
 }

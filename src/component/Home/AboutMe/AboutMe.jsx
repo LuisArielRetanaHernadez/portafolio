@@ -1,6 +1,3 @@
-// react-router-dom
-import { Link } from "react-router-dom"
-
 // style of component AboutMe.jsx
 import "./AboutMe.css"
 
@@ -30,15 +27,15 @@ const AboutMe = () => {
                         </p>
                     </div>
                     <div className="container-buttons">
-                        <button>
+                        <a className="button-cv" href="https://drive.google.com/file/d/1LjtlgjeH50kzTx7hhaOHHcyXTOrmDXge/view?usp=sharing" target="_black">
                             <p>CV</p>
                             <span></span>
-                        </button>
-                        <Link to="contacto">
+                        </a>
+                        <a className="button-direction-contact" href="#Contact">
                             <p>Match</p>
                             <span className="about-me-contactcircle-1">G</span>
                             <span className="about-me-contactcircle-2">O</span>
-                        </Link>
+                        </a>
                     </div>
                 </div>
             </div>

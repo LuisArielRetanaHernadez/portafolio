@@ -194,3 +194,18 @@
         width: 15%;
     }
 }
+
+/* ----------- media max-width: 400px ---------- */
+@media (max-width: 400px) {
+    .content-about-education, .content-skills {
+        width: 90%;
+        margin-top: 0.5rem;
+        border-radius: 15px;
+    }
+    .content-icon-skill {
+        width: 16%;
+    }
+    .content-icon-skill p {
+        font-size: small;
+    }
+}
