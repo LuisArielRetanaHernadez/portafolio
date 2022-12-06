@@ -27,7 +27,7 @@ const AboutMe = () => {
                         </p>
                     </div>
                     <div className="container-buttons">
-                        <a className="button-cv" href="https://drive.google.com/file/d/1-vKuW537ej_cqZXTOohPrvUWo35I-opb/view?usp=sharing" target="_black">
+                        <a className="button-cv" href="https://drive.google.com/file/d/1iVDaO5EPke2wcAERASX2WTnz2i8VBHVb/view?usp=sharing" target="_black">
                             <p>CV</p>
                             <span></span>
                         </a>
